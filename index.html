@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Airat Halitov helps companies automate processes and launch AI-driven solutions, from audits to no-code apps, analytics, and ongoing support." />
+    <title>Airat Halitov · Process Automation & AI Solutions</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Airat Halitov · Process Automation & AI Solutions" />
+    <meta property="og:description" content="Discover how Airat Halitov delivers comprehensive audits, AI implementation, no-code apps, and analytics to accelerate your business." />
+    <meta property="og:url" content="https://about.airat.top/" />
+    <meta property="og:image" content="https://about.airat.top/airattop.jpg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Airat Halitov · Process Automation & AI Solutions" />
+    <meta property="twitter:description" content="Discover how Airat Halitov delivers comprehensive audits, AI implementation, no-code apps, and analytics to accelerate your business." />
+    <meta property="twitter:image" content="https://about.airat.top/airattop.jpg" />
+    <meta name="msvalidate.01" content="A4ADBC8E0D3C862E117640B06AC788E3" />
+    <meta name="google-site-verification" content="zuHpP1sB8u4uv7gVtMj2RNaGCoxq2lGMYENOCMovy1Y" />
+    <link rel="canonical" href="https://about.airat.top/" />
+    <link rel="icon" href="airattop.jpg" type="image/jpeg" />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg-start: #0c1c38;
+        --bg-end: #1b4478;
+        --panel: rgba(12, 23, 45, 0.92);
+        --text: #f4f7fb;
+        --muted: #c8d5e8;
+        --accent: #44a3ff;
+        --border: rgba(110, 139, 178, 0.35);
+        font-size: 16px;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: clamp(1.5rem, 3vw + 1rem, 4rem) 1.5rem;
+        background: radial-gradient(circle at top, rgba(80, 160, 255, 0.3), transparent 55%),
+          linear-gradient(165deg, var(--bg-start) 0%, var(--bg-end) 100%);
+        color: var(--text);
+      }
+
+      main {
+        width: min(960px, 100%);
+        background: linear-gradient(180deg, rgba(19, 37, 68, 0.95) 0%, rgba(10, 22, 44, 0.92) 100%);
+        border-radius: 28px;
+        padding: clamp(2.2rem, 3vw + 1.5rem, 3.8rem);
+        box-shadow: 0 35px 80px rgba(8, 27, 51, 0.55);
+        backdrop-filter: blur(12px);
+      }
+
+      header {
+        text-align: center;
+      }
+
+      header img {
+        width: clamp(110px, 12vw, 140px);
+        height: clamp(110px, 12vw, 140px);
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid rgba(68, 163, 255, 0.45);
+        box-shadow: 0 22px 40px rgba(20, 60, 110, 0.55);
+      }
+
+      header h1 {
+        margin: 1.5rem 0 0.35rem;
+        font-size: clamp(2rem, 2.4vw + 1rem, 2.8rem);
+        letter-spacing: 0.08em;
+      }
+
+      header p.subtitle {
+        margin: 0;
+        font-size: clamp(1rem, 1.1vw + 0.8rem, 1.2rem);
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.32em;
+      }
+
+      header p.summary {
+        margin: 1.25rem auto 0;
+        max-width: 640px;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .divider {
+        margin: 2.5rem auto;
+        width: 48px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent 0%, rgba(68, 163, 255, 0.8) 50%, transparent 100%);
+      }
+
+      section h2 {
+        margin: 0 0 1.5rem;
+        text-align: center;
+        font-size: clamp(1.45rem, 1.2vw + 1.1rem, 1.9rem);
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      .services-grid {
+        display: grid;
+        gap: clamp(1.4rem, 1.4vw, 1.75rem);
+      }
+
+      @media (min-width: 720px) {
+        .services-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      .service-card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+        padding: 1.4rem 1.6rem;
+        border-radius: 18px;
+        border: 1px solid var(--border);
+        background: linear-gradient(145deg, rgba(23, 44, 78, 0.74), rgba(10, 24, 48, 0.65));
+      }
+
+      .icon-circle {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        background: rgba(68, 163, 255, 0.12);
+        border: 1px solid rgba(68, 163, 255, 0.25);
+        display: grid;
+        place-items: center;
+        box-shadow: inset 0 0 18px rgba(68, 163, 255, 0.08);
+      }
+
+      .icon-circle svg {
+        width: 28px;
+        height: 28px;
+        fill: none;
+        stroke: var(--accent);
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .service-card h3 {
+        margin: 0;
+        font-size: 1.05rem;
+        letter-spacing: 0.04em;
+      }
+
+      .service-card p {
+        margin: 0.45rem 0 0;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      .contact-section,
+      .social-section {
+        margin-top: 3rem;
+        padding: 1.6rem;
+        border-radius: 18px;
+        background: linear-gradient(150deg, rgba(21, 44, 78, 0.78), rgba(12, 27, 50, 0.74));
+        border: 1px solid rgba(68, 163, 255, 0.18);
+        text-align: center;
+      }
+
+      .contact-section h3,
+      .social-section h3 {
+        margin: 0;
+        font-size: 0.95rem;
+        letter-spacing: 0.32em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .contact-grid,
+      .social-grid {
+        margin-top: 1.4rem;
+        display: grid;
+        gap: 0.9rem;
+      }
+
+      @media (min-width: 560px) {
+        .contact-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .social-grid {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+
+      .action-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.85rem 1rem;
+        border-radius: 999px;
+        border: 1px solid rgba(68, 163, 255, 0.28);
+        background: rgba(68, 163, 255, 0.14);
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+      }
+
+      .action-btn svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+      }
+
+      .action-btn:hover,
+      .action-btn:focus-visible {
+        transform: translateY(-2px);
+        background: rgba(68, 163, 255, 0.22);
+        box-shadow: 0 12px 25px rgba(30, 98, 180, 0.35);
+        outline: none;
+      }
+
+      .action-btn.placeholder {
+        opacity: 0.65;
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        text-align: center;
+        font-size: 0.95rem;
+        color: rgba(200, 213, 232, 0.75);
+      }
+
+      footer a {
+        color: var(--accent);
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="airattop.jpg" alt="Airat Halitov portrait" />
+        <h1>Airat Halitov</h1>
+        <p class="subtitle">Process Automation & AI Solutions</p>
+        <p class="summary">
+          For over a decade I have helped companies save hundreds of thousands of dollars through turnkey automation:
+          from deep process audits and architecture design to launching production-ready no-code applications, intelligent bots,
+          and AI workflows in record time.
+        </p>
+      </header>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <section aria-labelledby="what-you-get">
+        <h2 id="what-you-get">What You Get</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="6.5" />
+                <line x1="16" y1="16" x2="21" y2="21" />
+              </svg>
+            </span>
+            <div>
+              <h3>Comprehensive Audits & Optimization</h3>
+              <p>
+                Diagnose bottlenecks across CRM, ERP, logistics, and sales. Receive a clear modernization plan to cut costs
+                and raise efficiency by 20–50%.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <span class="icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3.5" y="4.5" width="17" height="15" rx="2.5" />
+                <path d="M7 9h10M7 12h6M17 17v2" />
+              </svg>
+            </span>
+            <div>
+              <h3>AI Solutions Implementation</h3>
+              <p>
+                Deploy GPT, LLaMA, and custom predictive models for chatbots, demand forecasting, and content automation
+                tailored to your workflows.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <span class="icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="4" y="4" width="7" height="7" rx="1.8" />
+                <rect x="13" y="4" width="7" height="7" rx="1.8" />
+                <rect x="4" y="13" width="7" height="7" rx="1.8" />
+                <path d="M13 16h7" />
+              </svg>
+            </span>
+            <div>
+              <h3>No-Code & Low-Code Applications</h3>
+              <p>
+                Launch internal tools on n8n, AppSheet, and BigQuery within 7–14 days. Integrate MySQL, PostgreSQL,
+                and Google Sheets without writing heavy code.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <span class="icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="6" cy="6" r="2.2" />
+                <circle cx="18" cy="6" r="2.2" />
+                <circle cx="6" cy="18" r="2.2" />
+                <circle cx="18" cy="18" r="2.2" />
+                <path d="M8 6h8M6 8v8M18 8v8M8 18h8" />
+              </svg>
+            </span>
+            <div>
+              <h3>End-to-End Integrations</h3>
+              <p>
+                Connect CRM, ERP, email, and messaging platforms into unified multi-channel dashboards with reliable data flows
+                and automations.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <span class="icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <polyline points="4 14 8.5 10 13 14 18 9 20 11" />
+                <line x1="4" y1="18.5" x2="20" y2="18.5" />
+                <line x1="4" y1="6" x2="4" y2="18" />
+              </svg>
+            </span>
+            <div>
+              <h3>Real-Time Reporting & Analytics</h3>
+              <p>
+                Build live dashboards in Looker Studio, Power BI, and Metabase with automatic KPI refresh, budget tracking,
+                and ROI transparency.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <span class="icon-circle" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 4l7 4v8l-7 4-7-4V8l7-4z" />
+                <path d="M9 12l3 2 3-2" />
+              </svg>
+            </span>
+            <div>
+              <h3>Support & Scaling</h3>
+              <p>
+                SLA-based maintenance, workflow refinement, and team enablement. Deliverables include contracts,
+                acceptance reports, and NDA-compliant documentation that keep stakeholders aligned.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="contact-section">
+        <h3>Have Questions? Write to Me</h3>
+        <div class="contact-grid">
+          <a class="action-btn" href="mailto:mail@airat.top">
+            <svg viewBox="0 0 24 24">
+              <path d="M2.5 6.25A2.25 2.25 0 0 1 4.75 4h14.5A2.25 2.25 0 0 1 21.5 6.25v11.5A2.25 2.25 0 0 1 19.25 20h-14.5A2.25 2.25 0 0 1 2.5 17.75V6.25Zm2.25-.75a.75.75 0 0 0-.75.75v.23l8.5 5.09 8.5-5.09v-.23a.75.75 0 0 0-.75-.75h-15.5Zm15.5 3.27-7.86 4.71a.75.75 0 0 1-.78 0L3.75 8.77v8.98c0 .414.336.75.75.75h15.5a.75.75 0 0 0 .75-.75V8.77Z" />
+            </svg>
+            Email
+          </a>
+          <a class="action-btn" href="https://t.me/Airat_Halitov" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24">
+              <path d="M21.48 4.19c.23-.94-.68-1.72-1.54-1.37L2.9 9.77c-1.04.43-.97 1.93.1 2.25l4.34 1.35 1.72 5.36c.32 1 1.58 1.19 2.24.32l2.35-3.14 4.23 3.09c.79.57 1.9.16 2.1-.78l3.13-14.03Zm-7.33 3.38-7.26 4.45c-.44.27-.33.94.18 1.06l2.24.56a.7.7 0 0 1 .41.24l1.67 1.98c.34.4 1 .23 1.13-.27l1.82-6.66c.14-.53-.41-.94-.9-.66Z" />
+            </svg>
+            Telegram
+          </a>
+          <a class="action-btn" href="https://wa.me/+79667770704" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24">
+              <path d="M12.02 2a9.99 9.99 0 0 0-8.67 15.07L2.5 22l5.12-1.68A9.99 9.99 0 1 0 12.02 2Zm0 1.88a8.11 8.11 0 0 1 6.78 12.6l-.19.3a.98.98 0 0 0-.12.76l.78 2.74-2.82-.88a.98.98 0 0 0-.78.09 8.1 8.1 0 0 1-10.78-3.02 8.1 8.1 0 0 1 6.13-12.6Z" />
+              <path d="M9.98 8.62c.22-.48.83-.54 1.11-.12l.74 1.06c.2.28.17.67-.06.91l-.53.57c-.18.19-.2.46-.07.68.45.75 1.45 1.61 2.15 1.9.23.09.49.02.65-.17l.58-.67c.21-.24.57-.3.85-.13l1.2.71c.44.26.5.88.12 1.23l-.23.21a2.37 2.37 0 0 1-2.4.4 6.9 6.9 0 0 1-4.35-3.94 2.37 2.37 0 0 1 .29-2.64Z" />
+            </svg>
+            WhatsApp
+          </a>
+          <a class="action-btn" href="https://www.linkedin.com/in/AiratTop" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24">
+              <path d="M4.98 3.5h14.04A1.48 1.48 0 0 1 20.5 4.98v14.04a1.48 1.48 0 0 1-1.48 1.48H4.98A1.48 1.48 0 0 1 3.5 19.02V4.98A1.48 1.48 0 0 1 4.98 3.5Z" />
+              <path d="M7.35 8.7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm-1.15 1.7h2.3v8.1h-2.3zM10.7 10.4h2.2v1.11h.03c.3-.6 1.03-1.24 2.12-1.24 2.27 0 2.7 1.5 2.7 3.46v4.83h-2.3v-4.28c0-1.02-.02-2.35-1.43-2.35-1.44 0-1.66 1.12-1.66 2.27v4.36h-2.3V10.4Z" fill="#0c2344" />
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="social-section">
+        <h3>Subscribe to My Social Media</h3>
+        <div class="social-grid">
+          <a class="action-btn" href="https://github.com/AiratTop" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2c-5.52 0-10 4.48-10 10 0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.61-3.37-1.34-3.37-1.34-.45-1.17-1.1-1.48-1.1-1.48-.9-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.9.83.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.26.1-2.64 0 0 .84-.27 2.75 1.02A9.55 9.55 0 0 1 12 6.8c.85.004 1.7.12 2.5.35 1.9-1.29 2.74-1.02 2.74-1.02.55 1.38.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.68 0 3.85-2.35 4.7-4.58 4.95.36.31.68.91.68 1.84 0 1.33-.01 2.4-.01 2.73 0 .26.18.58.69.48A10.003 10.003 0 0 0 22 12c0-5.52-4.48-10-10-10Z" />
+            </svg>
+            GitHub
+          </a>
+          <a class="action-btn" href="https://www.youtube.com/@AiratTop" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24">
+              <path d="M21.6 7.2c-.2-1.1-.9-2-2-2.1C17.9 4.7 14 4.5 12 4.5s-5.9.2-7.6.6c-1 .2-1.8 1-2 2.1C2 9 2 12 2 12s0 3  .4 4.8c.2 1.1 1 1.9 2 2.1 1.7.4 5.6.6 7.6.6s5.9-.2 7.6-.6c1-.2 1.8-1 2-2.1.4-1.8.4-4.8.4-4.8s0-3-.4-4.8Z" />
+              <path d="M10 9.75v4.5L15 12l-5-2.25Z" fill="#0c2344" />
+            </svg>
+            YouTube
+          </a>
+          <a class="action-btn" href="https://www.instagram.com/airat.top/" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24">
+              <path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm0 1.8A2.2 2.2 0 0 0 4.8 7v10A2.2 2.2 0 0 0 7 19.2h10a2.2 2.2 0 0 0 2.2-2.2V7A2.2 2.2 0 0 0 17 4.8H7Zm5 3.2a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 1.8a2.2 2.2 0 1 0 0 4.4 2.2 2.2 0 0 0 0-4.4Zm5.2-2.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z" />
+            </svg>
+            Instagram
+          </a>
+          <a class="action-btn" href="https://www.tiktok.com/@airat.top" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24">
+              <path d="M14.68 3h3.1a5.63 5.63 0 0 0 1.63 3.45 5.6 5.6 0 0 0 3.59 1.24v3.16a8.15 8.15 0 0 1-5.08-1.69v6.91a5.92 5.92 0 1 1-5.92-5.92c.26 0 .52.02.77.05V14a2.79 2.79 0 1 0 2.79 2.8V3Z" />
+            </svg>
+            TikTok
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          <a href="https://privacy.airat.top" target="_blank" rel="noreferrer">Privacy Policy</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
