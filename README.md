@@ -2,7 +2,7 @@
 
 Static about page describing AiratTop and the focus on process automation and AI solutions.
 
-The page is published and available at: https://about.airat.top
+The page is published and available at: https://airat.top and https://about.airat.top
 
 ## License
 
