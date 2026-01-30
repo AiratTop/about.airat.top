@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -20,271 +20,46 @@
     <meta name="google-site-verification" content="zuHpP1sB8u4uv7gVtMj2RNaGCoxq2lGMYENOCMovy1Y" />
     <meta name="yandex-verification" content="6d08a6d5c02c329e" />
     <link rel="canonical" href="https://airat.top/" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" href="/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
-    <style>
-      :root {
-        color-scheme: light dark;
-        --bg-start: #0c1c38;
-        --bg-end: #1b4478;
-        --panel: rgba(12, 23, 45, 0.92);
-        --text: #f4f7fb;
-        --muted: #c8d5e8;
-        --accent: #44a3ff;
-        --border: rgba(110, 139, 178, 0.35);
-        font-size: 16px;
-        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      }
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: clamp(1.5rem, 3vw + 1rem, 4rem) 1.5rem;
-        background: radial-gradient(circle at top, rgba(80, 160, 255, 0.3), transparent 55%),
-          linear-gradient(165deg, var(--bg-start) 0%, var(--bg-end) 100%);
-        color: var(--text);
-      }
-
-      main {
-        width: min(960px, 100%);
-        background: linear-gradient(180deg, rgba(19, 37, 68, 0.95) 0%, rgba(10, 22, 44, 0.92) 100%);
-        border-radius: 28px;
-        padding: clamp(2.2rem, 3vw + 1.5rem, 3.8rem);
-        box-shadow: 0 35px 80px rgba(8, 27, 51, 0.55);
-        backdrop-filter: blur(12px);
-      }
-
-      header {
-        text-align: center;
-      }
-
-      header img {
-        width: clamp(110px, 12vw, 140px);
-        height: clamp(110px, 12vw, 140px);
-        border-radius: 50%;
-        object-fit: cover;
-        border: 3px solid rgba(68, 163, 255, 0.45);
-        box-shadow: 0 22px 40px rgba(20, 60, 110, 0.55);
-      }
-
-      header h1 {
-        margin: 1.5rem 0 0.75rem;
-        font-size: clamp(2rem, 2.4vw + 1rem, 2.8rem);
-        letter-spacing: 0.08em;
-      }
-
-      header p.subtitle {
-        margin: 0;
-        font-size: clamp(1rem, 1.1vw + 0.8rem, 1.2rem);
-        color: var(--muted);
-        text-transform: uppercase;
-        letter-spacing: 0.32em;
-      }
-
-      header p.summary {
-        margin: 1.25rem auto 0;
-        max-width: 640px;
-        line-height: 1.7;
-        color: var(--muted);
-      }
-
-      .divider {
-        margin: 2.5rem auto;
-        width: 48px;
-        height: 2px;
-        background: linear-gradient(90deg, transparent 0%, rgba(68, 163, 255, 0.8) 50%, transparent 100%);
-      }
-
-      section h2 {
-        margin: 0 0 1.5rem;
-        text-align: center;
-        font-size: clamp(1.45rem, 1.2vw + 1.1rem, 1.9rem);
-        letter-spacing: 0.24em;
-        text-transform: uppercase;
-        color: var(--accent);
-      }
-
-      .services-grid {
-        display: grid;
-        gap: clamp(1.4rem, 1.4vw, 1.75rem);
-      }
-
-      @media (min-width: 720px) {
-        .services-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-      }
-
-      .service-card {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 1rem;
-        padding: 1.4rem 1.6rem;
-        border-radius: 18px;
-        border: 1px solid var(--border);
-        background: linear-gradient(145deg, rgba(23, 44, 78, 0.74), rgba(10, 24, 48, 0.65));
-      }
-
-      .icon-circle {
-        width: 54px;
-        height: 54px;
-        border-radius: 50%;
-        background: rgba(68, 163, 255, 0.12);
-        border: 1px solid rgba(68, 163, 255, 0.25);
-        display: grid;
-        place-items: center;
-        box-shadow: inset 0 0 18px rgba(68, 163, 255, 0.08);
-      }
-
-      .icon-circle svg {
-        width: 28px;
-        height: 28px;
-        fill: none;
-        stroke: var(--accent);
-        stroke-width: 1.8;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-      }
-
-      .service-card h3 {
-        margin: 0;
-        font-size: 1.05rem;
-        letter-spacing: 0.04em;
-      }
-
-      .service-card p {
-        margin: 0.45rem 0 0;
-        color: var(--muted);
-        line-height: 1.6;
-      }
-
-      .contact-section,
-      .social-section {
-        margin-top: 3rem;
-        padding: 1.6rem;
-        border-radius: 18px;
-        background: linear-gradient(150deg, rgba(21, 44, 78, 0.78), rgba(12, 27, 50, 0.74));
-        border: 1px solid rgba(68, 163, 255, 0.18);
-        text-align: center;
-      }
-
-      .contact-section h3,
-      .social-section h3 {
-        margin: 0;
-        font-size: 0.95rem;
-        letter-spacing: 0.32em;
-        text-transform: uppercase;
-        color: var(--muted);
-      }
-
-      .contact-grid,
-      .social-grid {
-        margin-top: 1.4rem;
-        display: grid;
-        gap: 0.9rem;
-      }
-
-      @media (min-width: 560px) {
-        .contact-grid {
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-
-        .social-grid {
-          grid-template-columns: repeat(4, minmax(0, 1fr));
-        }
-      }
-
-      .action-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-        padding: 0.85rem 1rem;
-        border-radius: 999px;
-        border: 1px solid rgba(68, 163, 255, 0.28);
-        background: rgba(68, 163, 255, 0.14);
-        color: var(--text);
-        text-decoration: none;
-        font-weight: 600;
-        transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
-      }
-
-      .action-btn svg {
-        width: 18px;
-        height: 18px;
-        fill: currentColor;
-      }
-
-      .action-btn:hover,
-      .action-btn:focus-visible {
-        transform: translateY(-2px);
-        background: rgba(68, 163, 255, 0.22);
-        box-shadow: 0 12px 25px rgba(30, 98, 180, 0.35);
-        outline: none;
-      }
-
-      .action-btn.placeholder {
-        opacity: 0.65;
-        cursor: not-allowed;
-        pointer-events: none;
-      }
-
-      footer {
-        margin-top: 2.5rem;
-        text-align: center;
-        font-size: 0.95rem;
-        color: rgba(200, 213, 232, 0.75);
-      }
-
-      footer a {
-        color: var(--accent);
-        font-weight: 600;
-        text-decoration: none;
-      }
-
-      footer a:hover {
-        text-decoration: underline;
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        *,
-        *::before,
-        *::after {
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
-          scroll-behavior: auto !important;
-        }
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <header>
-        <img src="airattop.jpg" alt="AiratTop portrait" />
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <main class="shell">
+      <header class="brand brand-centered">
+        <div class="avatar">
+          <img src="airattop.jpg" alt="AiratTop portrait" />
+        </div>
+        <p class="brand-eyebrow">airat.top</p>
         <h1>AiratTop</h1>
-        <p class="subtitle">Process Automation & AI Solutions</p>
-        <p class="summary">
+        <p class="brand-subtitle">Process Automation &amp; AI Solutions</p>
+        <div class="brand-actions">
+          <a class="repo-link" href="#contact">Contact</a>
+          <a class="repo-link" href="https://donate.airat.top" target="_blank" rel="noreferrer">Donate</a>
+          <a class="repo-link" href="https://github.com/AiratTop" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </header>
+
+      <section class="content">
+        <p class="lead">
           For over a decade I have helped companies save hundreds of thousands of dollars through turnkey automation:
           from deep process audits and architecture design to launching production-ready no-code applications, intelligent bots,
           and AI workflows in record time.
         </p>
-      </header>
 
-      <div class="divider" aria-hidden="true"></div>
-
-      <section aria-labelledby="what-you-get">
-        <h2 id="what-you-get">What You Get</h2>
+        <h2>What You Get</h2>
         <div class="services-grid">
           <article class="service-card">
             <span class="icon-circle" aria-hidden="true">
@@ -294,7 +69,7 @@
               </svg>
             </span>
             <div>
-              <h3>Comprehensive Audits & Optimization</h3>
+              <h3>Comprehensive Audits &amp; Optimization</h3>
               <p>
                 Diagnose bottlenecks across CRM, ERP, logistics, and sales. Receive a clear modernization plan to cut costs
                 and raise efficiency by 20–50%.
@@ -328,7 +103,7 @@
               </svg>
             </span>
             <div>
-              <h3>No-Code & Low-Code Applications</h3>
+              <h3>No-Code &amp; Low-Code Applications</h3>
               <p>
                 Launch internal tools on n8n, AppSheet, and BigQuery within 7–14 days. Integrate MySQL, PostgreSQL,
                 and Google Sheets without writing heavy code.
@@ -366,7 +141,7 @@
               </svg>
             </span>
             <div>
-              <h3>Real-Time Reporting & Analytics</h3>
+              <h3>Real-Time Reporting &amp; Analytics</h3>
               <p>
                 Build live dashboards in Looker Studio, Power BI, and Metabase with automatic KPI refresh, budget tracking,
                 and ROI transparency.
@@ -386,7 +161,7 @@
               </svg>
             </span>
             <div>
-              <h3>Support & Scaling</h3>
+              <h3>Support &amp; Scaling</h3>
               <p>
                 SLA-based maintenance, workflow refinement, and team enablement. Deliverables include contracts,
                 acceptance reports, and NDA-compliant documentation that keep stakeholders aligned.
@@ -396,9 +171,9 @@
         </div>
       </section>
 
-      <div class="contact-section">
-        <h3>Have Questions? Write to Me</h3>
-        <div class="contact-grid">
+      <section class="content content-center" id="contact">
+        <h2>Have Questions? Write to Me</h2>
+        <div class="action-grid">
           <a class="action-btn" href="mailto:mail@airat.top">
             <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" fill="currentColor">
               <path d="M61.4 64C27.5 64 0 91.5 0 125.4c0 .9 0 1.7.1 2.6H0V384c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V128h-.1c0-.9.1-1.7.1-2.6 0-33.9-27.5-61.4-61.4-61.4H61.4Zm402.6 128.3V384c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192.3l154.8 117.4c31.4 23.9 74.9 23.9 106.4 0L464 192.3ZM48 125.4c0-7.4 6-13.4 13.4-13.4h389.2c7.4 0 13.4 6 13.4 13.4 0 4.2-2 8.2-5.3 10.7L280.2 271.5c-14.3 10.8-34.1 10.8-48.4 0L53.3 136.1c-3.3-2.5-5.3-6.5-5.3-10.7Z" />
@@ -424,11 +199,11 @@
             LinkedIn
           </a>
         </div>
-      </div>
+      </section>
 
-      <div class="social-section">
-        <h3>Subscribe to My Social Media</h3>
-        <div class="social-grid">
+      <section class="content content-center">
+        <h2>Subscribe to My Social Media</h2>
+        <div class="action-grid">
           <a class="action-btn" href="https://github.com/AiratTop" target="_blank" rel="noreferrer">
             <svg viewBox="0 0 512 512" aria-hidden="true" focusable="false" fill="currentColor">
               <path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM252.8 8c-138.7 0-244.8 105.3-244.8 244 0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1 100-33.2 167.8-128.1 167.8-239 0-138.7-112.5-244-251.2-244zM105.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
@@ -454,16 +229,17 @@
             TikTok
           </a>
         </div>
-      </div>
+      </section>
 
-      <footer>
+      <footer class="doc-footer">
         <p>
-          <a href="https://privacy.airat.top" target="_blank" rel="privacy-policy">Privacy Policy</a>
+          <a href="https://privacy.airat.top" target="_blank" rel="noreferrer privacy-policy">Privacy Policy</a>
           |
-          <a href="https://terms.airat.top" target="_blank" rel="terms-of-service">Terms of Use</a>
+          <a href="https://terms.airat.top" target="_blank" rel="noreferrer terms-of-service">Terms of Use</a>
         </p>
       </footer>
     </main>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVEGGNPJXK"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
