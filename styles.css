@@ -436,10 +436,12 @@ body::before {
 
 .section-title {
   margin: 2rem 0 0.85rem;
-  font-size: 0.95rem;
-  letter-spacing: 0.14em;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--accent);
+  text-align: center;
 }
 
 .project-grid {
