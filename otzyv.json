@@ -1,0 +1,26 @@
+[
+  {
+    "id": "t-001",
+    "name_full": "Иванов Иван Иванович",
+    "name_public": "Иван Иванов",
+    "position": "Директор по операционной эффективности",
+    "company": "ООО Пример",
+    "company_url": "https://example.com",
+    "project": "Автоматизация отдела продаж",
+    "service": "Process Audit, Automation",
+    "rating": 5,
+    "rating_scale": 5,
+    "text_ru": "Текст отзыва на русском...",
+    "text_en": "English translation...",
+    "date": "2025-12-03",
+    "language": "ru",
+    "source": "survey",
+    "consent": {
+      "publish_name": true,
+      "publish_company": true,
+      "publish_text": true
+    },
+    "featured": true,
+    "order": 10
+  }
+]
