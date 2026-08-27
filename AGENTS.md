@@ -15,7 +15,7 @@ Public About page for AiratTop (`airat.top` / `about.airat.top`).
 ## Site Conventions
 - Keep unified visual style with other AiratTop public pages.
 - Keep SEO metadata: `title`, `description`, canonical, Open Graph, Twitter tags.
-- Keep the Google Analytics counter and other required site-verification tags; Yandex verification is intentionally not used.
+- Keep the Google Analytics counter and other required site-verification tags.
 - Publish static assets from `public_html`.
 
 ## AI Working Notes
